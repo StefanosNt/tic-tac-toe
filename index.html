@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <title>Tic Tac Toe</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/tic-tac-toe.css" rel="stylesheet">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/tic-tac-toe.js"></script>
+  </head>
+  <body>  
+    <div id="block" class="container">
+      <div id="header">
+        <span style="color:#ff5511">TIC</span> TAC <span style="color:#ffbb00">TOE</span> 
+      </div>
+      <div class="row">
+        <div class="col-xs-4 fstyle"> 
+          <div>MY ROLE : <span id="myRole"></span></div>
+        </div> 
+        <div class="col-xs-4 fstyle">MY SCORE : <span id="myScore"></span></div>
+        <div class="col-xs-4 fstyle"> MACHINE SCORE : <span id="machineScore"></span></div> 
+      </div>
+      <div id="row1" class="row text-center"> 
+        <div id="c1" class="col-xs-4 cell"></div>
+        <div id="c2" class="col-xs-4 cell"></div>
+        <div id="c3" class="col-xs-4 cell"></div>
+      </div>
+      <div id="row2" class="row text-center"> 
+        <div id="c4" class="col-xs-4 cell"></div>
+        <div id="c5" class="col-xs-4 cell"></div>
+        <div id="c6" class="col-xs-4 cell"></div>
+      </div>
+      <div id="row3" class="row text-center"> 
+        <div id="c7" class="col-xs-4 cell"></div>
+        <div id="c8" class="col-xs-4 cell"></div>
+        <div id="c9" class="col-xs-4 cell"></div>
+      </div>
+      <div class="row text-center">
+        <button id="reset" type="button" class="btn btn-primary">RESET</button> 
+      </div>
+    </div>
+
+    <div class="modal fade" id="startup" data-backdrop="static" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+             <h4 class="modal-title" id="myModalLabel">Please choose your role</h4>
+          </div> 
+          <div class="modal-footer">
+            <button id="X" type="button" class="btn btn-success" data-dismiss="modal">X</button>
+            <button id="O" type="button" class="btn btn-primary" data-dismiss="modal">O</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="winner" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+             <h4 class="modal-title" id="winnerLabel"></h4>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
